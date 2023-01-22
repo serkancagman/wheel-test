@@ -2658,7 +2658,7 @@ window.onload = () => {
   dynamicallyLoadScript(
     "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
   );
-  loadStyle("./style.css");
+  loadStyle("https://cdn.jsdelivr.net/gh/serkancagman/wheel-test/style.css");
   createWheelButton();
   createLottie();
 
