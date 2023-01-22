@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  position: relative;
+}
+
+#wheelModal {
+  background-image: url("https://web-tools-sw.s3.eu-west-3.amazonaws.com/wheel/wheel-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-family: "Roboto", sans-serif;
+  display: block;
+
+  animation: fadein 0.5s;
+}
+
+#wheelButton {
+  position: fixed;
+  top: 270px;
+  right: 20px;
+  z-index: 402;
+  cursor: pointer;
+}
+
+.wheel-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: block;
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wheel-modal-main {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: relative;
+}
+.wheel-modal-main-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.wheel-btn-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wheel-btn-text {
+  margin-left: 10px;
+}
+.wheel-modal-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wheel-first-modal {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.wheel-modal-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wheel-content-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wheel-first-modal-content {
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+}
+.wheel-first-modal-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wheel-first-modal-title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px 30px;
+}
+.wheel-first-modal-form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.wheel-first-modal-form-label {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.wheel-first-modal-form-input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  border: 2px solid #fff;
+}
+
+.wheel-first-modal-form {
+  max-width: 300px;
+  width: 100%;
+}
+
+.wheel-first-modal-form-btn {
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wheel-result {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+.wheel-result-area {
+  margin: 10px 0;
+}
+.wheel-result-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.wheel-result-title {
+  margin: 0;
+}
+.wheel-result-text-area {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid green;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.result-text {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  min-width: 100px;
+}
+
+.copy_btn {
+  padding: 20px 5px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wheel-result-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.spin_btn {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.wheel-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 99999999;
+  cursor: pointer;
+}
+.wheel-modal-close-img {
+  width: 100%;
+  filter: invert(1);
+}
+#wheelIcon {
+  width: 100%;
+  height: 100%;
+}
+
+#termsCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#termsCheckbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#wheelTermsLink {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13px;
+}
